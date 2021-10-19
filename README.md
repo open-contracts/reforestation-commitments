@@ -1,2 +1,3 @@
-# Sample Contract
-An open contract sample. The barebones to get started.
+# Reforestation Commitments
+
+Mint a token in exchange for a permanent, binding commitment to reforestation, as measured by satellites.
