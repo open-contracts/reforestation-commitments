@@ -1,6 +1,6 @@
 # estimated seconds to install: 60
 setuptools
 earthdata
-gdal==3.0.4
+pyhdf
 cartopy==0.19.0.post1
 shapely
