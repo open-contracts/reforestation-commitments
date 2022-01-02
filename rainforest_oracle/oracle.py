@@ -3,7 +3,7 @@ import opencontracts
 import os
 from earthdata import Auth, DataGranules, Accessor
 from datetime import datetime
-from osgeo import gdal
+from pyhdf.SD import SD, SDC
 import numpy as np
 import cartopy.io.shapereader as shp
 import shapely.geometry as sgeom
@@ -23,14 +23,13 @@ with opencontracts.enclave_backend() as enclave:
       date_to=datetime(2000+yr, mo, 1).isoformat()
     )
   Accessor(auth).get(granules.get(), './dl')
-  data = gdal.Open(gdal.Open('./dl/'+os.listdir('./dl')[0]).GetSubDatasets()[0][0])
-  ndvi = data.ReadAsArray()[1600:2500,2000:3000] * 0.0001
+  data = SD('./dl/'+os.listdir('./dl')[0], SDC.READ)
+  ndvi = data.select('CMG 0.05 Deg 16 days NDVI').get()[1600:2500,2000:3000] * 0.0001
 
   countries = shp.Reader(shp.natural_earth(category='cultural', name='admin_0_countries')).records()
   brazil = list(filter(lambda c:c.attributes['ISO_A3'] == 'BRA', countries))[0].geometry
   x, y = np.meshgrid(np.arange(2000,3000), np.arange(1600,2500))
-  xoff, a, b, yoff, d, e = data.GetGeoTransform()
-  contained = lambda x, y: brazil.contains(sgeom.Point(a*x+b*y+a/2+b/2+xoff, d*x+e*y+d/2+e/2+yoff))
+  contained = lambda x, y: brazil.contains(sgeom.Point(0.05*(x+0.5)-180, 90-0.05*(y+0.5)))
   in_brazil = np.vectorize(contained)(x, y)
 
   rainforest_share = (ndvi > 0.7)[in_brazil].mean()
