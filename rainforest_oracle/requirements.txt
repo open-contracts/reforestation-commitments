@@ -1,0 +1,5 @@
+# estimated seconds to install: 60
+setuptools
+earthdata
+osgeo
+cartopy
