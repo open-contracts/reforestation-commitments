@@ -1,6 +1,6 @@
 
 import opencontracts
-import os, geopy
+import os, geojson
 from earthdata import Auth, DataGranules, Accessor
 from datetime import datetime
 from pyhdf.SD import SD, SDC
