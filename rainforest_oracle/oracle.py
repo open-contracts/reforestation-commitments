@@ -32,7 +32,7 @@ with opencontracts.enclave_backend() as enclave:
   in_brazil = path.contains_points(list(zip(lon.flatten(), lat.flatten()))).reshape(lon.shape)
 
   rainforest_share = (ndvi > 0.8)[in_brazil].mean()
-  rainforest_km2 = rainforest_share * 8500000    # times size of brazil
+  rainforest_km2 = int(rainforest_share * 8500000)    # times size of brazil
 
   enclave.print(f'Validated rainforest size of {rainforest_km2} km^2 in {mo}-20{yr}')
   enclave.submit(rainforest_km2, mo, yr, types=('uint256', 'uint8', 'uint8',), function_name='measure_rainforest')
