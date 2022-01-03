@@ -1,6 +1,7 @@
 # estimated seconds to install: 60
+# apt-get install: libgeos-dev libproj-dev
 setuptools
 earthdata
 pyhdf
-cartopy==0.19.0.post1
 shapely
+cartopy==0.19.0.post1
