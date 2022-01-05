@@ -2,7 +2,7 @@
 
 What if carbon credits actually represented a binding commitment to emissions reductions?
 Let's find out! This contract allows anyone to deposit tokens, which can only be claimed by one of two persons:
-  1. The [Government of Brazil](https://twitter.com/govbrazil) by [making an appropriate tweet](opencontracts.io/#/open-contracts/pay-a-twitter), but only a small chunk in every month in which the Amazon Rainforest im Brazil grew sufficiently/didn't shrink
+  1. The [Government of Brazil](https://twitter.com/govbrazil) by [making an appropriate tweet](https://opencontracts.io/#/open-contracts/pay-a-twitter), but only a small chunk in every month in which the Amazon Rainforest im Brazil grew sufficiently/didn't shrink
   2. The Depositor, but only a chunk for which 1. didn't happen.
 
 Why the President and not farmers? Well, the property rights for the Brazilian rainforest [seem to be assigned to the Brazilian state](https://spectator.clingendael.org/en/publication/who-owns-brazilian-rainforest).
