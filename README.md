@@ -11,5 +11,6 @@ Why the President and not farmers? Because the property rights for the Brazilian
 What if nobody cares? Let's say the contract repays the depositors if no withdrawal occurs within 3 years, for now.
 
 TODOs: 
-- Improve Mechanism Design, to the point where we can compute e.g. expected CO2 abatement per USDC invested and actually sell carbon credits
+- Find out the smallest `fixed_amount` which would provide sufficient incentives to stop deforestation
+- Improve Mechanism Design, to the point where one can compute e.g. expected CO2 abatement per USDC invested and actually sell carbon credits
 - Integrate 3D lidar measurements of forest structure from [GEDI ISS Module](https://en.wikipedia.org/wiki/Global_Ecosystem_Dynamics_Investigation)
