@@ -7,4 +7,4 @@ Let's find out! This contract allows anyone to deposit tokens, which can only be
 
 TODOs: 
 - Integrate 3D lidar measurements of forest structure from [GEDI ISS Module](https://en.wikipedia.org/wiki/Global_Ecosystem_Dynamics_Investigation)
-- Improve Mechanism Design, to the point where we can compute e.g. CO2 abatement per USDC invested
+- Improve Mechanism Design, to the point where we can compute e.g. expected CO2 abatement per USDC invested and actually sell carbon credits
