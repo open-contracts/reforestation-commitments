@@ -1,4 +1,3 @@
-
 import opencontracts
 import os, geojson
 from earthdata import Auth, DataGranules, Accessor
