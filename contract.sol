@@ -14,6 +14,7 @@ contract ReforestationIncentives is OpenContract {
     function measureRainforest(bytes32 oracleID, uint256 rainforest_km2, uint8 mo, uint8 yr) public 
     checkOracle(oracleID, this.measureRainforest.selector) {
         uint256 reward = 1 * (rainforest_km2 - 0);
+        // todo: optimize payment rule
         PayATwitterAccount(0xc8bf1115EB097A4c33d865Be7040ffde8D4FDeA5).deposit{value:reward}("govbrazil");
     }
 
