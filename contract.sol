@@ -8,6 +8,7 @@ contract ReforestationIncentives is OpenContract {
     }
 
     function deposit() public payable {
+        // todo: allow for uint256 rewardPerKm2 argument 
     }
 
     function measureRainforest(bytes32 oracleID, uint256 rainforest_km2, uint8 mo, uint8 yr) public payable 
