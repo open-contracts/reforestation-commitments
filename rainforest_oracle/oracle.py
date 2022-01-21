@@ -13,7 +13,7 @@ with opencontracts.enclave_backend() as enclave:
   os.environ["CMR_PASSWORD"] = enclave.user_input('Password for NASA Earthdata API:')
 
   auth = Auth()
-  auth.login(strategy='environment')
+  assert auth.login(strategy='environment'), "Invalid Credentials" 
   # Data Info: https://lpdaac.usgs.gov/products/mod13c1v006/
   granules = DataGranules(auth).short_name('MOD13C1').version('006').temporal(
       date_from=datetime(2000+yr, mo, 1).isoformat(),
