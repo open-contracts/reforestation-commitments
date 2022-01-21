@@ -14,7 +14,7 @@ with opencontracts.enclave_backend() as enclave:
   auth = Auth()
   assert auth.login(strategy='environment'), "Invalid Credentials" 
   # Data Info: https://lpdaac.usgs.gov/products/mod13c1v006/
-  enclave.expect_delay(50, "Downloading Amazon Rainforest Satellite Images...")
+  enclave.expect_delay(60, "Downloading Amazon Rainforest Satellite Images...")
   granules = DataGranules(auth).short_name('MOD13C1').version('006').temporal(
       date_from=datetime(2000+yr, mo, 1).isoformat(),
       date_to=datetime(2000+yr, mo, 1).isoformat()
