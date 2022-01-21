@@ -11,10 +11,10 @@ with opencontracts.enclave_backend() as enclave:
   yr, mo = int(yr), int(mo)
   os.environ["CMR_USERNAME"] = enclave.user_input('Username for NASA Earthdata API:')
   os.environ["CMR_PASSWORD"] = enclave.user_input('Password for NASA Earthdata API:')
-
   auth = Auth()
   assert auth.login(strategy='environment'), "Invalid Credentials" 
   # Data Info: https://lpdaac.usgs.gov/products/mod13c1v006/
+  enclave.expect_delay(50, "Downloading Amazon Rainforest Satellite Images...")
   granules = DataGranules(auth).short_name('MOD13C1').version('006').temporal(
       date_from=datetime(2000+yr, mo, 1).isoformat(),
       date_to=datetime(2000+yr, mo, 1).isoformat()
