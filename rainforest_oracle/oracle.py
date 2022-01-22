@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.path as mpath
 
 with opencontracts.enclave_backend() as enclave:
-  yr, mo = enclave.user_input('Year-Month (YY-MM)').split('-')
+  yr, mo = enclave.user_input('Enter month in "MM/YY" format:').split('/')
   yr, mo = int(yr), int(mo)
   os.environ["CMR_USERNAME"] = enclave.user_input('Username for NASA Earthdata API:')
   os.environ["CMR_PASSWORD"] = enclave.user_input('Password for NASA Earthdata API:')
