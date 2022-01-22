@@ -2,7 +2,7 @@ pragma solidity ^0.8.0;
 import "https://github.com/open-contracts/protocol/blob/main/solidity_contracts/OpenContractRopsten.sol";
 
 contract ReforestationIncentives is OpenContract {
-    uint32 public rainforestKm2In2021 = 2897762;
+    uint32 public rainforestKm2In2021 = 3470909;
     uint8 public lastRewardedYear = 21;
 
     uint256[] public deposits;
