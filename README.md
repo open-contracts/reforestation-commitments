@@ -9,4 +9,9 @@ Solution: Let's look at ppls energy bills instead!
 - website login credentials = ownership
 - cost for switch perfectly measurable (what is the price difference to cover for green energy)
 - causal effect of incentive payment measurable (require registration first, proving you old provider, then provide regular evidence of green bills and get covered the price difference) and easily convertible into co2 equivalents
-- result: super high quality carbon credits, super easy to implement
+- result: super high quality carbon credits, super easy to implent
+
+Implementation:
+ - users generate proof that they reduced X tCO² by paying Y $ extra
+ - offset buyers commit they are willing to pay up to Z $ per tCO², and can only increase Z afterwards.
+ - users can claim min(Y/X,Z)*X $ payment from the commitment 
