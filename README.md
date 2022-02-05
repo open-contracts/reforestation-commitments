@@ -8,5 +8,5 @@ The whole reforestation thing sounds cool initially, but it's plagued by difficu
 Solution: Let's use ppls energy bills instead!
 - online, pw authentication = ownership
 - cost for switch perfectly measurable (what is the price difference to cover for green energy)
-- causal effect of incentive payment measurable (require registration first, proving you old provider, then provide regular evidence of green bills and get covered the price difference)
-- high guarantee for resale
+- causal effect of incentive payment measurable (require registration first, proving you old provider, then provide regular evidence of green bills and get covered the price difference) and easily convertible into co2 equivalents
+- result: super high quality carbon credits, super easy to implement
