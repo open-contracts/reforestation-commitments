@@ -14,4 +14,4 @@ Solution: Let's look at ppls energy bills instead!
 Implementation:
  - users generate proof that they reduced X tCO² by paying Y $ extra
  - offset buyers commit they are willing to pay up to Z $ per tCO², and can only increase Z afterwards.
- - users can claim min(Y/X,Z)*X $ payment from the commitment 
+ - users can claim min(Y/X,Z)*X $ payment from the commitment by deleting X
