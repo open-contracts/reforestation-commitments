@@ -1,13 +1,5 @@
 # Reforestation Commitments
 
-The market of carbon offsets is chronically p
-
-
-
-
-
-
-
 What if carbon credits actually represented a binding commitment to emissions reductions?
 Let's find out! This contract allows anyone to deposit USDC tokens, which can only be claimed in small chunks, once a month, by only one actor: the [Government of Brazil](https://twitter.com/govbrazil) by [making an appropriate tweet](https://opencontracts.io/#/open-contracts/pay-a-twitter), but only as much as
  ```
