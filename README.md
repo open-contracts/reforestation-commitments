@@ -1,16 +1,12 @@
-# Reforestation Commitments
+# Green Electricity Carbon Credit
 
-What if carbon credits actually represented a binding commitment to emissions reductions?
-Let's find out! This contract allows anyone to deposit USDC tokens, which can only be claimed in small chunks, once a month, by only one actor: the [Government of Brazil](https://twitter.com/govbrazil) by [making an appropriate tweet](https://opencontracts.io/#/open-contracts/pay-a-twitter), but only as much as
- ```
- withdrawal = fixed_amount*(forest_area(current_month)-forest_area(Jan_01_2022))
- ```
- 
-Why the President and not farmers? Because the property rights for the Brazilian rainforest generally [seem to be assigned to the Brazilian state](https://spectator.clingendael.org/en/publication/who-owns-brazilian-rainforest), who just happens to have no incentive (yet) to stop the deforestation. It also seems difficult to verify that a "potential farmer" actually owns (and is able to enforce) the property rights to a given piece of the rainforest.
+The whole reforestation thing sounds cool initially, but it's plagued by difficulties
+- what's the right counterfactual to use if no money was spent? (in CA, growers often "legally cheat" by assuming >80% deforestation!)
+- how do you guarantee the funding is there when needed, but conditional on succeeding at reliably avoiding co2
+- who owns which part of the forest and can claim responsibility for improvements
 
-What if nobody cares? Let's say the contract repays the depositors if no withdrawal occurs within 3 years, for now.
-
-TODOs: 
-- Find out the smallest `fixed_amount` which would provide sufficient incentives to stop deforestation
-- Improve Mechanism Design, to the point where one can compute e.g. expected CO2 abatement per USDC invested and actually sell carbon credits
-- Integrate 3D lidar measurements of forest structure from [GEDI ISS Module](https://en.wikipedia.org/wiki/Global_Ecosystem_Dynamics_Investigation)
+Solution: Let's use ppls energy bills instead!
+- online, pw authentication = ownership
+- cost for switch perfectly measurable (what is the price difference to cover for green energy)
+- causal effect of incentive payment measurable (require registration first, proving you old provider, then provide regular evidence of green bills and get covered the price difference)
+- high guarantee for resale
