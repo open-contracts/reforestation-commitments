@@ -1,16 +1,15 @@
 pragma solidity ^0.8.0;
 import "https://github.com/open-contracts/protocol/blob/main/solidity_contracts/OpenContractRopsten.sol";
 
-contract ReforestationIncentives is OpenContract {
+contract ReforestationCommitments is OpenContract {
     uint32 public rainforestKm2In2021 = 3470909;
     uint8 public lastRewardedYear = 21;
 
     uint256[] public deposits;
     uint256[] public valuesPerKm2PerYear;
-    
 
     constructor() {
-        setOracle("any", this.measureRainforest.selector);  // for debugging purposes, allow any oracleID
+        setOracleHash(this.measureRainforest.selector, 0x084772360c4f8761e7d571283d445a0c51c5fa9a70e205353e73c1c32ec5b9db);
     }
 
     function deposit(uint256 valuePerKm2PerYear) public payable {
@@ -18,8 +17,7 @@ contract ReforestationIncentives is OpenContract {
         valuesPerKm2PerYear.push(valuePerKm2PerYear);
     }
 
-    function measureRainforest(bytes32 oracleID, uint256 rainforestKm2, uint8 mo, uint8 yr) public 
-    checkOracle(oracleID, this.measureRainforest.selector) {
+    function measureRainforest(uint256 rainforestKm2, uint8 mo, uint8 yr) public requiresOracle {
         require(mo == 1, "The contract currently rewards rainforest size yearly, every January.");
         require(yr > lastRewardedYear, "The reward for the submitted year was already claimed.");
         lastRewardedYear += 1;
@@ -34,7 +32,7 @@ contract ReforestationIncentives is OpenContract {
                 deposits[i] -= valueGenerated;
             }
         }
-        PayATwitterAccount(0xc8bf1115EB097A4c33d865Be7040ffde8D4FDeA5).deposit{value:reward}("govbrazil");
+        PayATwitterAccount(0x0D364e6Cf21da8f77FBE0de4d6D75Df35e048EA7).deposit{value:reward}("govbrazil");
     }
 }
 
