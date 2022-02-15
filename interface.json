@@ -1,6 +1,6 @@
 {
   "ropsten": {
-    "name": "Reforestation Incentives",
+    "name": "Reforestation Commitments",
     "address": "0x2c9c3B12F42E65a594827562acc83E31BfD3681b",
     "abi": [
 	{
