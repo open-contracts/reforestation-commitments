@@ -9,7 +9,7 @@ contract ReforestationCommitments is OpenContract {
     uint256[] public valuesPerKm2PerYear;
 
     constructor() {
-        setOracleHash(this.measureRainforest.selector, 0x084772360c4f8761e7d571283d445a0c51c5fa9a70e205353e73c1c32ec5b9db);
+        setOracleHash(this.measureRainforest.selector, 0xc2c67acdd86a8ef691f2af349535d93f7b71dce8264908f2bc0711d01796f6d8);
     }
 
     function deposit(uint256 valuePerKm2PerYear) public payable {
