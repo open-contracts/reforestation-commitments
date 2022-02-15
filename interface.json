@@ -1,49 +1,113 @@
 {
-  "ropsten": {
-    "name": "Reforestation Commitments",
-    "address": "0x2c9c3B12F42E65a594827562acc83E31BfD3681b",
-    "abi": [
-	{
-		"inputs": [],
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
-	{
-		"inputs": [],
-		"name": "deposit",
-		"outputs": [],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "bytes32",
-				"name": "oracleID",
-				"type": "bytes32"
-			},
-			{
-				"internalType": "uint256",
-				"name": "rainforest_km2",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint8",
-				"name": "mo",
-				"type": "uint8"
-			},
-			{
-				"internalType": "uint8",
-				"name": "yr",
-				"type": "uint8"
-			}
-		],
-		"name": "measureRainforest",
-		"outputs": [],
-    "oracleFolder": "rainforest_oracle",
-		"stateMutability": "nonpayable",
-		"type": "function"
-	}
-]
-  }
+  "name": "Reforestation Commitments",
+  "address": {
+    "ropsten": "0x2c9c3B12F42E65a594827562acc83E31BfD3681b"
+  },
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "valuePerKm2PerYear",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposits",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lastRewardedYear",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "rainforestKm2",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "mo",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint8",
+          "name": "yr",
+          "type": "uint8"
+        }
+      ],
+      "name": "measureRainforest",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "rainforestKm2In2021",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "valuesPerKm2PerYear",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
 }
