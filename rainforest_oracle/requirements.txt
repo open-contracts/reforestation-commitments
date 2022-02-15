@@ -1,6 +1,0 @@
-# estimated seconds to install: 20
-setuptools
-earthdata
-pyhdf
-matplotlib
-geojson
