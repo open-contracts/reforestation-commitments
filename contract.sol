@@ -32,7 +32,7 @@ contract ReforestationCommitments is OpenContract {
                 deposits[i] -= valueGenerated;
             }
         }
-        PayATwitterAccount(0x78b4d78436238dF64d37a093f63E76558A8f94fc).deposit{value:reward}("govbrazil");
+        PayATwitterAccount(0x507D995e5E1aDf0e6B77BD18AC15F8Aa747B6D07).deposit{value:reward}("govbrazil");
     }
 }
 
