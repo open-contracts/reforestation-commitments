@@ -7,7 +7,7 @@
     "contract": "Anyone can commit ETH to the reforestation of the rainforest by calling the `deposit` function, and specifying how much they value one additional square kilometer of rainforest per year. This value gets added to a list called `valuesPerKm2PerYear`, and the total amount deposited is added to a list called `deposits`. Every year, the Brazilian government can call `measureRainforest`, to claim a reforestation reward that is computed as follows: `reward = sum(valuesPerKm2PerYear) * km2AddedSince2021` Whoever controls the [@govbrazil](https://twitter.com/govbrazil) Twitter handle can withdraw their reward via the [Pay-A-Twitter-Account](https://dapp.opencontracts.io/#/open-contracts/pay-a-twitter-account) contract. Afterwards, the amounts in `valuesPerKm2PerYear` are subtracted from their respective `deposits`, and get removed from `valuesPerKm2PerYear` if their deposits run out.",
     "measureRainforest": "This function starts an oracle session, in which the enclave downloads [NASA sattelite data](https://lpdaac.usgs.gov/products/mod13c1v006/) to compute the size of the Brazilian rainforest in January of any year. If it is larger than it was in 2021, the Brazilian government can withdraw the sum of the rewards that users commited via the `deposit` function.",
     "deposit": "By calling this function, you can deposit as much capital as you want towards maintaining the Brazilian rainforest. You get to choose how much you would be willing to pay per year for every km2 that the Rainforest added in over its 2021 size, and your deposit will be incrementally used accordingly."
-  }
+  },
   "abi": [
     {
       "inputs": [],
