@@ -1,6 +1,6 @@
 # Reforestation Commitments
 
-If you have the [MetaMask Wallet](https://metamask.io/) as browser plugin or mobile app, you can [play around with the contract](https://dapp.opencontracts.io/#/open-contracts/fiat-swap) on Ethereum's Ropsten Testnet! Just make sure your wallet is loaded with some free [Testnet ETH](https://faucet.egorfine.com/). It's also on [Optimistic Ethereum](https://optimism.io)'s Mainnet, which you can add to your metamask [here](https://chainlist.org/).
+If you have the [MetaMask Wallet](https://metamask.io/) as browser plugin or mobile app, you can [play around with the contract](https://dapp.opencontracts.io/#/open-contracts/reforestation-commitments) on Ethereum's Ropsten Testnet! Just make sure your wallet is loaded with some free [Testnet ETH](https://faucet.egorfine.com/). It's also on [Optimistic Ethereum](https://optimism.io)'s Mainnet, which you can add to your metamask [here](https://chainlist.org/).
 
 ### Big picture
 
