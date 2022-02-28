@@ -1,5 +1,7 @@
 # Reforestation Commitments
 
+If you have the [MetaMask Wallet](https://metamask.io/) as browser plugin or mobile app, you can [play around with the contract](https://dapp.opencontracts.io/#/open-contracts/fiat-swap) on Ethereum's Ropsten Testnet! Just make sure your wallet is loaded with some free [Testnet ETH](https://faucet.egorfine.com/). It's also on [Optimistic Ethereum](https://optimism.io)'s Mainnet, which you can add to your metamask [here](https://chainlist.org/).
+
 ### Big picture
 
 The market for voluntary carbon offsets has notorious credibility issues. Many offsets that are traded do not actually correspond to a unique reduction in emissions that could be transparently verified. The market for reforestation in particular has the problem that the offset emissions are calculated under the assumption that the reforested areas wont be deforested just a few years later. Unfortunately this assumption often fails, and the reforested areas are quickly deforested again, once the carbon offsets were sold.
