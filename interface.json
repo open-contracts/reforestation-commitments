@@ -2,7 +2,8 @@
   "name": "Reforestation Commitments",
   "address": {
     "ropsten": "0xf5B4794c5204127c8305Df3041eCB46465113ce9",
-    "optimism": "0xa2d9519A8692De6E47fb9aFCECd67737c288737F"
+    "optimism": "0xa2d9519A8692De6E47fb9aFCECd67737c288737F",
+    "arbitrum": "0xd8Ac1cb045Fad0a59A4b92315C78f6fd7457704F"
   },
   "descriptions" : {
     "contract": "Anyone can commit ETH to the reforestation of the rainforest by calling the `deposit` function, and specifying how much they value one additional square kilometer of rainforest per year. This value gets added to a list called `valuesPerKm2PerYear`, and the total amount deposited is added to a list called `deposits`. Every year, the Brazilian government can call `measureRainforest`, to claim a reforestation reward that is computed as follows: `reward = sum(valuesPerKm2PerYear) * km2AddedSince2021` Whoever controls the [@govbrazil](https://twitter.com/govbrazil) Twitter handle can withdraw their reward via the [Pay-A-Twitter-Account](https://dapp.opencontracts.io/#/open-contracts/pay-a-twitter-account) contract. Afterwards, the amounts in `valuesPerKm2PerYear` are subtracted from their respective `deposits`, and get removed from `valuesPerKm2PerYear` if their deposits run out.",
